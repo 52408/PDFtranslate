@@ -1,0 +1,76 @@
+{
+  "providers": [
+    {
+      "id": "deepseek",
+      "label": "DeepSeek 官方（推荐）",
+      "api": "openai",
+      "base_url": "https://api.deepseek.com",
+      "default_model": "deepseek-chat",
+      "note": "性价比最高，学术长句翻译质量好。密钥在 platform.deepseek.com 申请。",
+      "homepage": "https://platform.deepseek.com/api_keys"
+    },
+    {
+      "id": "siliconflow",
+      "label": "硅基流动 SiliconFlow",
+      "api": "openai",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "default_model": "deepseek-ai/DeepSeek-V3",
+      "note": "国内直连快，有免费额度；模型名形如 deepseek-ai/DeepSeek-V3。",
+      "homepage": "https://cloud.siliconflow.cn/account/ak"
+    },
+    {
+      "id": "dashscope",
+      "label": "阿里云百炼（通义千问）",
+      "api": "openai",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "default_model": "qwen-plus",
+      "note": "通义千问系列，中文语感好；也可换 qwen-max / qwen-turbo。",
+      "homepage": "https://bailian.console.aliyun.com/"
+    },
+    {
+      "id": "moonshot",
+      "label": "Kimi / Moonshot",
+      "api": "openai",
+      "base_url": "https://api.moonshot.cn/v1",
+      "default_model": "moonshot-v1-8k",
+      "note": "长上下文友好，适合整页长段落。",
+      "homepage": "https://platform.moonshot.cn/console/api-keys"
+    },
+    {
+      "id": "zhipu",
+      "label": "智谱 GLM",
+      "api": "openai",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "default_model": "glm-4-flash",
+      "note": "glm-4-flash 有免费额度。",
+      "homepage": "https://open.bigmodel.cn/usercenter/apikeys"
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI 官方",
+      "api": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "default_model": "gpt-4o-mini",
+      "note": "需要能直连 OpenAI；国内通常要走中转站（用「新增引擎」填自己的地址）。",
+      "homepage": "https://platform.openai.com/api-keys"
+    },
+    {
+      "id": "ollama",
+      "label": "本地 Ollama（离线，不花钱）",
+      "api": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "default_model": "qwen2.5:7b",
+      "note": "完全不出本机。需要你先装好 Ollama 并 pull 一个模型，速度取决于显卡。",
+      "homepage": "https://ollama.com/download"
+    },
+    {
+      "id": "google",
+      "label": "免费网页引擎（Google，免 Key）",
+      "api": "google_web",
+      "base_url": "https://translate.googleapis.com",
+      "default_model": "google-web",
+      "note": "不需要任何密钥，零成本。质量明显不如大模型，公式/术语可能翻错；适合先看大意。",
+      "homepage": ""
+    }
+  ]
+}
